@@ -1,0 +1,24 @@
+
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
+import HeaderLanding from '../../Components/HeaderLanding'
+import PromoEventItem from '../../Components/PromoEventItem'
+let event1 = require('./Components/img/event.jpg')
+let event2 = require('./Components/img/event2.jpg')
+let event3 = require('./Components/img/event3.jpg')
+
+export default class App extends Component {
+  render(){
+    return (
+      <SafeAreaView style={GloblaStyle.droidSafeArea}>
+        <HeaderLanding/>
+        <ScrollView> 
+          <PromoEventItem image = {event1} text = {"Evento"} />
+          <PromoEventItem image = {event2} text = {"Evento 2"} />
+          <PromoEventItem image = {event3} text = {"Evento 3"} />
+        </ScrollView>
+          
+      </SafeAreaView>
+    );
+  }
+}

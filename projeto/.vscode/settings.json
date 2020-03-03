@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    ".expo": true,
+    ".expo-shared": true,
+    ".vscode": true,
+    "yarn.lock": true,
+    "yarn-error.log": true,
+    "babel.config.js": true,
+    "web-build": true,
+    ".gitignore": true,
+    "assets": true
+  }
+}
